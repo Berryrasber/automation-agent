@@ -1,0 +1,3 @@
+Info: System started successfully
+Warning: Low disk space
+Error: Something went wrong

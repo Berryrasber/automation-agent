@@ -1,0 +1,2 @@
+I love programming in Python.
+Python is a great programming language.

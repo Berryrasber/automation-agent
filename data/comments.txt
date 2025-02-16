@@ -1,0 +1,4 @@
+I love programming in Python.
+Python is a great programming language.
+I enjoy solving coding challenges.
+I love watching football.

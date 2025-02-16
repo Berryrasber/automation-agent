@@ -1,0 +1,5 @@
+﻿Python is a great programming language.
+Python is used for data science.
+Data is very important in today's world.
+We analyze data using Python.
+Data, data, and more data!

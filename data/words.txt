@@ -1,0 +1,5 @@
+data: 6
+is: 3
+python: 2
+﻿python: 1
+a: 1
