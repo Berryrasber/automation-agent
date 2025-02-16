@@ -36,10 +36,10 @@ def read_file():
     print(f"DEBUG: Requested file path -> {path}")
 
     # Ensure the path is inside /data for security
-    if not path or not path.startswith("/data/") or ".." in path:
+    if not path or not path.startswith("data/") or ".." in path:
         return "", 404
 
-    full_path = os.path.join(os.getcwd(), path.lstrip("/"))
+    full_path = os.path.join(os.getcwd(), path)  # No need for lstrip("/")
 
     # Debugging: Print the actual full path
     print(f"DEBUG: Full file path -> {full_path}")
@@ -48,7 +48,7 @@ def read_file():
         return "", 404
 
     try:
-        with open(full_path, 'r') as f:
+        with open(full_path, 'r', encoding="utf-8") as f:
             content = f.read()
         return Response(content, mimetype='text/plain'), 200
     except Exception as e:
